@@ -4,12 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
-  <body onload="">
-    <h1>Preparada per riure?</h1>
-    <p id="acudit">Aquí va l'acudit.</p>
-    <button id="btn" onclick="show()">Següent acudit</button>
+  <body>
+    <div class="temperatura d-flex">
+      <img src="" id="icon" alt="" />
+      <div id="weather" style="margin-top: 2.5rem"></div>
+    </div>
+
+    <header class="bg_animate"></header>
+    <!--  <div class="container">
+      <div class="row">
+        <div
+          class="blob d-flex align-items-center justify-content-center position-fixed top-50 start-50 translate-middle"
+        >
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#D0E2FF"
+              d="M38.8,-59.9C51.7,-52,64.6,-43.7,69.5,-32C74.4,-20.3,71.3,-5.3,67.3,8.4C63.3,22,58.4,34.2,48.8,38.7C39.3,43.1,25,39.9,13.5,41.2C1.9,42.5,-7,48.3,-16.1,48.5C-25.1,48.6,-34.4,43.2,-44.4,36C-54.5,28.9,-65.4,19.9,-70.1,8.2C-74.8,-3.6,-73.3,-18.2,-65.7,-27.9C-58,-37.6,-44.2,-42.4,-32.2,-50.7C-20.2,-58.9,-10.1,-70.6,1.4,-72.8C12.9,-75,25.9,-67.7,38.8,-59.9Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container" style="margin-top: 3rem">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 d-flex flex-column align-items-center">
+          <h1>Preparada per riure?</h1>
+          <p id="acudit" style="margin-top: 3rem"></p>
+        </div>
+      </div>
+      <section
+        style="margin-top: 3rem"
+        class="col-12 d-flex align-items-center justify-content-center"
+      >
+        <button id="1" class="btn" onclick="getScore(1)" style="font-size:50px;">&#x1F602</button>
+         <button
+          id="2"
+          class="btn"
+          style="margin-left: 1.5rem; margin-right: 1.5rem"
+          onclick="getScore(2)"
+          style="font-size:50px;"
+        >&#x1F610</button>
+        <button id="3" class="btn" onclick="getScore(3)" style="font-size:50px;">&#128554</button>
+      </section>
+
+      <br />
+      <div class="col-12 d-flex flex-column align-items-center">
+        <button class="btn-primary" id="btn" onclick="alterna()" style="margin-top:1rem;">
+          Següent acudit
+        </button>
+      </div>
+    </div>
+
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
     <script src="./build/index.js
     "></script>
   </body>
